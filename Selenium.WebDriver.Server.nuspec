@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Selenium.WebDriver.Server</id>
+    <version>3.0.1</version>
+    <authors>dwhelan</authors>
+    <summary>Copies the stand alone Selenium Server to your output directory upon build to prevent it from being needed to be checked in to source control.</summary>
+    <description>
+      Installs the Selenium.WebDriver.Server package into your Unit Test Project.
+      The "selenium-server-standalone.jar" is copied to the output bin folder from the package folder during the build.
+    </description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/dwhelan/selenium-webdriver-server/</projectUrl>
+    <licenseUrl>https://github.com/dwhelan/selenium-webdriver-server/LICENSE.bsd</licenseUrl>
+    <tags>Selenium WebDriver Server</tags>
+    <releaseNotes>
+      <![CDATA[
+      v.3.0.1
+      - Initial release.
+      ]]>
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="selenium-server-standalone.jar" target="server"/>
+    <file src="Selenium.WebDriver.Server.targets" target="build"/>
+  </files>
+</package>
