@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Selenium.WebDriver.Server</id>
-    <version>3.0.1</version>
+    <version>3.0.1.1</version>
     <authors>dwhelan</authors>
     <summary>Copies the stand alone Selenium Server to your output directory upon build to prevent it from being needed to be checked in to source control.</summary>
     <description>

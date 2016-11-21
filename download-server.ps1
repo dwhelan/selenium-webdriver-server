@@ -15,6 +15,6 @@ $jarPath = Join-Path $currentPath $jarNameWithoutVersion
 
 # download jar file
 if (-not (Test-Path ".\$jarNameWithoutVersion")) {
-    echo "Downloading $jarName..."
+    echo "Downloading $downloadUrl to $jarName..."
     (New-Object Net.WebClient).Downloadfile($downloadurl, $jarPath)
 }

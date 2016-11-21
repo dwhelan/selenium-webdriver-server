@@ -17,3 +17,24 @@ selection of the correct version.
 
 ## License
 This project is licensed under the BSD license. in compliance with PhantomJS licensing resctrictions. See [LICENSE.bsd](LICENSE.bsd) for details.
+
+## Starting and Stopping the Standalone Server
+The following code will start the standalone server using `java`:
+```cs
+seleniumServer = new Process
+{
+    StartInfo =
+    {
+        FileName = "java",
+        Arguments = @"-jar selenium-server-standalone.jar",
+        UseShellExecute = false
+    }
+};
+seleniumServer.Start();
+```
+
+The following code will stop the standalone server:
+
+```cs
+seleniumServer.Kill();
+```
